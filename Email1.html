@@ -58,6 +58,12 @@
     color: white;
     padding: 10px;
     background-color: orange;}
+    .two-col{width:100%;max-width:600px}
+    .two-col .column{width:50%;max-width:300px;vertical-align:top}
+    .two-col .column img{display:block;width:100%;height:auto;border:0}
+    .two-col .column.text-block{background-color:#2E1D72;color:#ffffff}
+    .two-col .column.text-block p{color:#ffffff;margin:0;font-size:15px;line-height:1.6}
+    .two-col .column.text-block p + p{margin-top:12px}
     .card{background:#ffffff;border-radius:12px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
     .hr{height:4px;background:var(--dp-orange);border-radius:2px}
     a.btn{display:inline-block;padding:14px 22px;border-radius:8px;background:var(--dp-teal);color:#ffffff!important;font-weight:bold;text-decoration:none}
@@ -67,6 +73,8 @@
     @media (max-width:600px){
       .p-24{padding:20px!important}
       h1{font-size:24px}
+      .two-col .column{display:block!important;width:100%!important;max-width:100%!important}
+      .two-col .column img{width:100%!important;height:auto!important}
     }
   </style>
 </head>
@@ -98,6 +106,34 @@
                   <tr>
                     <td align="center" style="padding:0">
                       <img src="HEADER_WHYDR.jpg" alt="DP World - Why DR?" width="600" style="display:block; max-width:600px; width:100%; height:auto; border:0;">
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Bloque destacado 2 columnas -->
+                <table role="presentation" class="container two-col" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px; font-size:0;">
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:0;">
+                      <img src="Imgcolumn1.png" alt="Reemplazar con imagen logística" width="300">
+                    </td>
+                    <td class="column text-block" width="50%" valign="top" style="padding:24px; font-size:16px;">
+                      <p>En República Dominicana, DP World opera desde la península de Caucedo, un ecosistema logístico sin igual en la región. Operaciones portuarias, industriales y comerciales se conectan en un solo punto para brindar eficiencia, velocidad y trazabilidad a nivel global.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column text-block" width="50%" valign="top" style="padding:24px; font-size:16px;">
+                      <p>Estratégicamente ubicada en el centro de Las Américas, ofrece conexión directa con los principales puertos de Estados Unidos, Europa y Asia. Ideal para el nearshoring, perfecta para crecer, con una legislación favorable, procesos aduanales simplificados e incentivos fiscales que hacen más competitiva cada operación.</p>
+                    </td>
+                    <td class="column" width="50%" valign="top" style="padding:0;">
+                      <img src="Imgcolumn2.png" alt="Reemplazar con imagen de infraestructura" width="300">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:0;">
+                      <img src="Imgcolumn3.png" alt="Reemplazar con imagen de operaciones" width="300">
+                    </td>
+                    <td class="column text-block" width="50%" valign="top" style="padding:24px; font-size:16px;">
+                      <p>La terminal cuenta con servicios de valor agregado como logística de última milla, almacenamiento refrigerado y zonas francas que permiten optimizar cada cadena de suministro con soluciones hechas a la medida.</p>
                     </td>
                   </tr>
                 </table>

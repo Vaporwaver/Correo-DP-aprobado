@@ -60,6 +60,12 @@
     a.btn{display:inline-block;padding:14px 22px;border-radius:8px;background:var(--dp-teal);color:#ffffff!important;font-weight:bold;text-decoration:none}
     a:hover{opacity:.9}
     .muted{color:#66737f;font-size:13px}
+    .mobile-only{display:none!important;mso-hide:all;}
+    .email-content{display:block!important;}
+    @media only screen and (max-width:600px){
+      .email-content{display:none!important;mso-hide:all;}
+      .mobile-only{display:block!important;mso-hide:all;}
+    }
 
   </style>
 </head>
@@ -80,7 +86,15 @@
         <td align="center" style="padding:0;">
 
           <!-- CONTENIDO ORIGINAL -->
-          <table role="presentation" width="100%">
+          <table role="presentation" width="100%" class="mobile-only" style="display:none;">
+            <tbody><tr>
+              <td align="center" style="padding:0;">
+                <img src="https://2bgmarketingrd.com/wp-content/uploads/2025/09/Email-DP-World.png" alt="DP World República Dominicana" width="600" style="display:block;max-width:600px;width:100%;height:auto;border:0;">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table role="presentation" width="100%" class="email-content">
             <tbody><tr>
               <td align="center" style="padding:0">
 
